@@ -8,7 +8,7 @@ void setup()
   Serial.begin(9600);
   pinMode(buzzerpin, OUTPUT);
   pinMode(ledpin, OUTPUT);
-  val = analogRead(sensorpin)+200;
+  val = analogRead(sensorpin)-200;
   Serial.print("Initial Value:");
   Serial.println(val);
 }
@@ -18,7 +18,7 @@ void loop()
   int rate = analogRead(sensorpin);
   Serial.println(rate);
   
-  if(rate>val)
+  if(rate<val)
   {
     digitalWrite(buzzerpin, HIGH);
     digitalWrite(ledpin, HIGH);
