@@ -4,7 +4,7 @@
 | 아두이노 | 장치 |
 |:---------:|:---:|
 |5V    |  5V(CdS)    |
-|GND   | GND(busser, LED, CdS)|
+|GND   | GND(buzzer, LED, CdS sensor)|
 |D8    | buzzer |
 |D6    | LED    |
 |A5    | CdS    |
